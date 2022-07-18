@@ -7,48 +7,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500&display=swap');
 
 /*menu topo*/
+
 header {
     padding: 6vh;
-    color: #313131;
-    background-color: #ffffff;
-    box-shadow: 1px 8px 15px rgba(112, 112, 112, 0.342);
+    background-color: #004c8c;
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.342);
 }
 
 nav a {
     text-decoration: none;
-    color: #000000;
+    color: #e2e2e2;
 }
 
 body {
-    background-color: #e0e0e0 !important;
+    background-color: #d8d8d8 !important;
 }
 
 header h2 {
+    color: #ffffff;
     font-size: 6.5vh;
     margin-left: 10%;
     float: left;
     font-weight: 200;
     margin-top: 20px;
-
 }
 
 header ul {
     margin-left: 60%;
 }
 
- ul li {
+ul .navbar-nav nav-item {
+    font-size: 20vh;
+}
+
+ul li {
     margin-left: 20px;
     list-style: none;
     display: inline-block;
     font-size: 2.5vh;
     font-weight: 500;
     margin-top: 15px;
-    color: #313131;
-    background-color: #e7e7e7;
-    padding: 15px;
-    border-radius: 45px;
-
+    color: #ffffff !important;
+    padding: 10px;
+    border-radius: 5px;
 }
+
+.nav-list li a {
+    color: #ffffff;
+}
+
 
 /*texto principal*/
 
@@ -62,11 +69,19 @@ section {
 }
 
 section h1 {
+    color: #000000;
     font-size: 7vh;
     font-weight: 200;
 }
 
+section h3 {
+    color: #000000;
+    font-size: 4vh;
+    font-weight: 200;
+}
+
 section p {
+    color: #020202;
     font-size: 3vh;
     text-align: justify;
     font-weight: 100;
@@ -78,22 +93,26 @@ main {
     margin-right: auto;
 }
 
+
+/*caixas de texto*/
+
 input {
-    color: #000000;
-    height: 7vh;
+    color: #002f64;
+    height: 5vh;
     align-items: center;
-    width: 35vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    margin-left: auto;
-    margin-right: auto;
+    width: 25vw;
+    margin: 15vh;
     border-radius: 5vh;
     box-shadow: 0 0 0 0;
     outline: 0;
     border: 0 none;
-    background-color: #cecece;
-    padding-left: 5vh;
-    font-size: 3vh;
+    background-color: #a8a8a8;
+}
+
+label {
+    font-size: 2.5vh;
+    margin-left: 25px;
+    margin: 10px;
 }
 
 textarea:focus,
@@ -102,7 +121,6 @@ select:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
     border: 0 none;
-    background-color: #cecece;
 }
 
 textarea {
@@ -110,31 +128,205 @@ textarea {
 }
 
 ::placeholder {
-    color: #5e5e5e;
+    color: #000000;
     padding-left: 1vh;
-    font-size: 3vh;
+    font-size: 2vh;
 }
+
+
+/*caixa de pequeisa*/
+
+.butbusca{ 
+  margin-left: 0px !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.busca input {
+    color: #002f64;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 2vh;
+    background-color: #a8a8a8;
+    font-size: 2.5vh;
+    margin-bottom: 25px;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.busca ::placeholder {
+    font-size: 2.5vh;
+    margin-left: 25px;
+}
+
+.mensagem button {
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #000000 !important;
+    background-color: #bebebe;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+/*caixa de dados*/
 
 .resultados {
     margin-top: 3vh;
-    border: 2px solid rgb(26, 26, 26);
+    border: 2px solid rgb(168, 168, 168);
     height: 50vh;
     border-radius: 2vh;
+}
+
+
+/*formulario*/
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixaform {
+    color: #142552;
+}
+
+.emailnome {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.msg {
+    margin-left: 60px;
+    margin-top: 25px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.msg textarea {
+    display: flex;
+    align-content: center;
+    width: 40vw;
+    height: 200px;
+    background-color: #a3a3a3;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 0 none;
+    margin-bottom: 15px;
+}
+
+button {
+    outline: 0;
+    border: 0 none;
+    display: inline-block;
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 35vw !important;
+    color: #000000 !important;
+    background-color: #bebebe;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+}
+
+
+/*rodapé*/
+
+footer {
+    background-color: #15427c;
+    padding: 25px;
+    padding-top: 60px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 2vh;
+}
+
+footer h4 {
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+
+.contato {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    place-items: center;
+}
+
+.pesq {
+    height: 120px;
+    width: 150px;
+    margin: 55px;
+}
+
+.dev {
+    height: 120px;
+    width: 150px;
+    margin: 55px;
+}
+
+.logos img {
+    width: 15rem;
 }
 
 #menu-mobile {
     display: none;
 }
 
-ul .navbar-nav nav-item{
-  font-size: 20vh;
-} 
 
 /*Responsivo*/
 
 @media (max-width:880px) {
-    .navbar-brand{
-        color: #626dff;
+    .container-fluid {
+        background-color: #004c8c;
+        color: #004c8c;
+    }
+
+    .navbar-brand {
+        color: rgb(255, 255, 255) !important;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    button .navbar-toggler-icon {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    form {
+        margin-top: -50px;
+        display: block;
+    }
+
+    .msg {
+        margin-left: 0px;
+        margin-top: 25px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .msg textarea {
+        display: block;
+        align-content: center;
+        width: 80vw;
+        height: 200px;
+        background-color: #333333;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        border: 0 none;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+
+    .navbar-brand {
         margin-left: 25px;
         font-size: 30px !important;
     }
@@ -143,25 +335,39 @@ ul .navbar-nav nav-item{
         display: none;
     }
 
-    section{
+    section {
         margin-top: 5vh;
     }
 
     #menu-mobile {
         display: flex;
     }
+
     ul li {
-        margin-left: -35px;
+        margin-left: -10px;
         list-style: none;
         display: inline-block;
-        font-size: 3.5vh;
-        margin-top: 15px;
-        color: #000000;
-        padding: 10px;
+        font-size: 2.5vh;
+        margin-top: 8px;
+        color: #ffffff;
+        padding: 0px;
         border-radius: 25px;
     }
-    
+
     input {
         width: 80vw;
+    }
+
+    button {
+        outline: 0;
+        border: 0 none;
+        display: flex;
+        margin-right: -65px;
+        font-size: 2.5vh;
+        font-weight: 500;
+        color: #ffffff !important;
+        background-color: #0d1317;
+        padding: 10px;
+        border-radius: 5px;
     }
 }
