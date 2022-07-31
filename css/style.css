@@ -93,7 +93,6 @@ main {
     margin-right: auto;
 }
 
-
 /*caixas de texto*/
 
 input {
@@ -178,7 +177,16 @@ textarea {
     margin-top: 3vh;
     border: 2px solid rgb(168, 168, 168);
     height: 50vh;
-    border-radius: 2vh;
+}
+
+tbody{
+    font-size: 11pt;
+}
+
+iframe {
+    width: 80vw;
+    height: 50vh;
+    border: none;
 }
 
 
