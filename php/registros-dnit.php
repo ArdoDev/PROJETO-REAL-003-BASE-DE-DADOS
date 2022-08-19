@@ -1,4 +1,6 @@
 <?php
+  
+
     $sql = "SELECT * FROM dnit";
 
     $res = $conn->query($sql);
@@ -39,3 +41,4 @@
     }else{
         print"<p classe='alert alert-danger'>Sem Resultados.<p>";
     };
+

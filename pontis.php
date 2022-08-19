@@ -59,7 +59,7 @@
 
     </header>
     <section>
-        <h1>Método DNIT</h1>
+        <h1>Método Pontis</h1>
         <p>Metodologia desenvolvida pelo próprio DNIT para avalição de OAE’s em todo o território nacional. Foi modificada para atender, mais especificamente, as exigências do estado da Paraíba. Usa-se como critérios: VMDa, VMDc, MRFE, condição estrutural,
             distância entre portos, rodovias concedidas, aeródromos e capitais e o relevo predominante com sua declividade.</p>
     </section>
@@ -77,7 +77,7 @@
         <?php
         include("./php/conexao-db.php");
         ?>
-        <iframe src="./tabela.php" frameborder="0"></iframe>
+        <iframe src="./tabela-pontis.php" frameborder="0"></iframe>
         </div>
 
     
